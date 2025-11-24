@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/YOUR_USER/frontend-repo.git'
+                git 'https://github.com/vinF60/jenkins_test_frontend.git'
             }
         }
 
@@ -20,7 +20,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 sh "docker rm -f frontend || true"
-                sh "docker run -d --name frontend -p 3000:3000 frontend-app:latest"
+                sh "docker run -d --name frontend -p 3001:3001 frontend-app:latest"
             }
         }
     }
