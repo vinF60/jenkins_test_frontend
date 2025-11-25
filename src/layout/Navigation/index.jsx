@@ -35,7 +35,7 @@ function Navigation() {
         <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
           <Menu.Item key="1" icon={<DashboardOutlined />}>
             <Link to="/" />
-            Home Page
+            Home Page hehe
           </Menu.Item>
           <Menu.Item key="2" icon={<CustomerServiceOutlined />}>
             <Link to="/customer">Customer</Link>
